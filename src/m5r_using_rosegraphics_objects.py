@@ -50,7 +50,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #                center, radius, outline_color
 #
 #     f. What does a RoseWindow RENDER method do?
-#            It renders a window and doesn't do anything else for the inputted amount of time
+#            It renders the window and updates it with the objects that are attached to it
 #
 #     g. When is a RoseWindow close_on_mouse_click method call necessary?  Why?
 #            When you want a window to actually remain until the user gives an input, to make sure that the next window isn't opened until the first one is closed, which is done when it is clicked on
