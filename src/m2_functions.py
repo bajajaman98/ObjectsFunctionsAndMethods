@@ -3,12 +3,12 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Aman Bajaj.
 """
 
 ########################################################################
 #
-# TODO: 1. PUT YOUR NAME IN THE ABOVE LINE and...
+# DONE: 1. PUT YOUR NAME IN THE ABOVE LINE and...
 #
 #   Allow this file to use the rosegraphics.py file by marking the src
 #   directory as a "Sources Root".  Do that by right clicking on the src folder,
@@ -23,7 +23,6 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 import rosegraphics as rg
 import random
 
-
 def main():
     """
     Makes a TurtleWindow,
@@ -33,7 +32,9 @@ def main():
     # A TurtleWindow works "behind the scenes" to enable Turtle movement
     window = rg.TurtleWindow()
 
+    turtle5()
     turtle1()
+    turtle4()
     turtle3()
     turtle2()
     turtle2()
@@ -103,9 +104,48 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+    kachua = rg.SimpleTurtle()
+    kachua.pen = rg.Pen('red',15)
+
+    kachua.left(90)
+    kachua.forward(100)
+    kachua.left(90)
+    kachua.forward(50)
+
+    kachua.draw_square(20)
+
+
+def turtle5():
+    myrtle = rg.SimpleTurtle('turtle')
+    myrtle.pen = rg.Pen('orange',7)
+    myrtle.paint_bucket = rg.PaintBucket('green')
+    squirtle = rg.SimpleTurtle('turtle')
+    squirtle.pen = rg.Pen('turquoise',20)
+    squirtle.paint_bucket = rg.PaintBucket('yellow')
+
+    myrtle.right(45)
+    myrtle.forward(150)
+    myrtle.pen_up()
+    myrtle.right(60)
+    myrtle.backward(100)
+    myrtle.pen_down()
+    myrtle.begin_fill()
+    myrtle.draw_circle(100)
+    myrtle.end_fill()
+
+    squirtle.begin_fill()
+    squirtle.forward(100)
+    squirtle.right(120)
+    squirtle.forward(200)
+    squirtle.right(150)
+    squirtle.forward(174)
+    squirtle.end_fill()
+
+
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
@@ -137,7 +177,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -167,7 +207,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
@@ -183,7 +223,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
